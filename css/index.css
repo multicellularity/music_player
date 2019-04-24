@@ -1,0 +1,300 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url("../img/背景图2.jpg");
+    background-repeat:no-repeat ;
+    background-size:100% 100%;
+    background-attachment: fixed
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+/*头部开始*/
+header{
+    height: 40px;
+    line-height: 40px;
+    color: #eee;
+}
+.brows-box{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: black;
+    position: fixed;
+    z-index: 99;
+    border-bottom:3px solid #c70c0c ;
+    box-shadow: 0px 0px 10px 0px #c70c0c;
+
+}
+/*头部结束*/
+
+/*主体开始*/
+section .search{
+    width: 300px;
+    height: 30px;
+    margin: 50px auto;
+    display: block;
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 10px;
+    background-color: #f3f3f3;
+    opacity: 0.9;
+}
+section .search:hover {
+    box-shadow: 0px 0px 8px 0px #f6ebbc;
+}
+section ul{
+    margin: 0 auto;
+    width: 450px;
+    background-color: #c3c3c3;
+    opacity: 0.8;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    /*border: 0.5px solid #000;*/
+    /*box-shadow: 0px 0px 5px 0px;*/
+    margin-top: -20px;
+}
+section ul li{
+    padding: 5px 10px;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    opacity: 1;
+    padding: 8px;
+    border-bottom: 1px dashed #25252538;
+}
+section ul li:hover{
+    color: brown;
+}
+/*主体结束*/
+
+/*控制条开始*/
+footer{
+    background: url("../img/playbar.png") 0px -620px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+}
+
+footer .btns{
+    height: 53px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+footer .btns .prev{
+    background: url("../img/playbar.png") 0px -130px;
+    width: 28px;
+    height: 28px;
+}
+footer .btns .prev:hover{
+    background: url("../img/playbar.png") -30px -130px;
+}
+
+footer .btns .start{
+    background: url("../img/playbar.png") 0px -205px;
+    width: 36px;
+    height: 36px;
+    margin: 0px 10px;
+}
+footer .btns .start:hover{
+    background: url("../img/playbar.png") -40px -205px;
+}
+footer .btns .next{
+    background: url("../img/playbar.png") -80px -130px;
+    width: 28px;
+    height: 28px;
+}
+footer .btns .next:hover{
+    background: url("../img/playbar.png") -110px -130px;
+}
+/*进度条*/
+footer .bars{
+    /*position: fixed;*/
+    height: 48px;
+    padding: 7px 30px;
+}
+footer .bars .logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+footer .bars .logo:hover {
+    box-shadow: 0px 0px 10px 0px #fffae3;
+}
+footer .bars .logo img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+footer .ctrl-bars-box{
+    font-size: 12px;
+    color: #fff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+footer .ctrl-bars-box p{
+}
+footer .ctrl-bars-box p span{
+    margin-right: 20px;
+}
+footer .ctrl-bars-box .ctrl-bars{
+    background-color: #171717;
+    width: 400px;
+    height: 6px;
+    position: relative;
+    border-radius: 3px;
+    top: 8px;
+}
+footer .ctrl-bars-box .ctrl-bars .nowBars{
+    height: 6px;
+    border-radius: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+footer .ctrl-bars-box .ctrl-bars .ctrl-btn{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: absolute;
+    left: -3px;
+    top: -5px;
+    background-color: #f3f3f3;
+}
+footer .ctrl-bars-box .ctrl-bars .ctrl-btn:hover{
+    box-shadow: 0px 0px 20px 0px white;
+}
+footer .ctrl-bars-box .ctrl-bars .ctrl-btn .ctrl-btn-small{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #c70c0c;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+/*播放时间*/
+footer .bars .times{
+    color: #fff;
+    font-size: 15px;
+    margin: 13px 20px;
+}
+
+/*音量，模式*/
+footer .modes{
+    height: 53px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+footer .modes .voice{
+    width: 25px;
+    height: 25px;
+    background: url("../img/playbar.png") -1px -250px;
+}
+footer .modes .voice:hover{
+    background: url("../img/playbar.png") -30px -250px;
+}
+footer .modes .mode{
+    width: 25px;
+    height: 25px;
+    background: url("../img/playbar.png") -3px -345px;
+    margin: 0px 6px;
+}
+footer .modes .mode:hover{
+    background: url("../img/playbar.png") -33px -345px;
+}
+footer .modes .play-list{
+    width: 58px;
+    height: 25px;
+    background: url("../img/playbar.png") -45px -70px;
+    color: white;
+    line-height: 23px;
+    text-indent: 25px;
+
+}
+footer .modes .play-list:hover{
+    background: url("../img/playbar.png") -45px -100px;
+}
+
+/*播放列表*/
+footer .play-list-box{
+    width: 55%;
+    height: 300px;
+    background-color: #252525;
+    position: absolute;
+    bottom: 46px;
+    left: 22.5%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    margin-bottom: -350px;
+    opacity: 0.8;
+}
+footer .play-list-box .list-header{
+    background-color: #212121;
+    width: 100%;
+    height: 41px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #cccccc;
+    line-height: 41px;
+    text-indent: 20px;
+}
+footer .play-list-box ul{
+    font-size: 12px;
+    color: #d0d0d0;
+    overflow: hidden;
+    width: 100%;
+    height: 259px;
+}
+footer .play-list-box ul li{
+    text-indent: 20px;
+    width: 100%;
+    height: 28px;
+    line-height: 28px;
+    cursor: pointer;
+
+}
+footer .play-list-box ul li:hover{
+    background-color: #161313;
+    color: #fff;
+}
+footer .play-list-box ul li.active{
+    background-color: #e44a4e;
+    color: #fff;
+    opacity: 0.6;
+}
+footer .play-list-box ul li span:nth-of-type(1){
+    float: left;
+}
+footer .play-list-box ul li span:nth-of-type(2){
+    float: right;
+    margin-right: 20px;
+}
+footer .play-list-box ul li i{
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 20px;
+}
+/*控制条结束*/
